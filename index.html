@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: darkgray;
+        }
+    </style>
+</head>
+<body>
+    <svg height="800" width="500" viewBox="0 0 20 20">
+        <!-- First SVG -->
+        <g>
+            <circle r="10" cx="10" cy="10" fill="darkgreen" />
+            <circle r="9.5" cx="10" cy="10" fill="transparent"
+                    stroke="firebrick"
+                    stroke-width="1"
+                    stroke-dasharray="1.57 1.57"
+                    transform="rotate(9,10,10)" />
+        </g>
+        <g>
+            <circle r="9" cx="10" cy="10" fill="white" />
+            <circle r="4" cx="10" cy="10" fill="transparent"
+                    stroke="black"
+                    stroke-width="10"
+                    stroke-dasharray="1.57 1.57"
+                    transform="rotate(9,10,10)" />
+        </g>
+        
+        <!-- Second SVG (overlapping the first) -->
+
+        <!-- Third SVG (overlapping the first two) -->
+        <g>
+            <circle r="10" cx="10" cy="10" fill="transparent" />
+            <circle r="5" cx="10" cy="10" fill="transparent"
+                    stroke="transparent"
+                    stroke-width="10"
+                    stroke-dasharray="1.57 1.57"
+                    transform="rotate(9,10,10)" />
+        </g>
+    </svg>
+</body>
+</html>
